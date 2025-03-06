@@ -1,0 +1,16 @@
+enum TicketStatus {
+  open
+  resolved
+}
+
+model Ticket {
+  id          Int       @id @default(autoincrement())
+  title       String
+  status      TicketStatus @default(open)
+  description String?
+  urgency     Int
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  completedAt DateTime?
+  urgencyUpdatedAt DateTime?
+}
