@@ -83,3 +83,4 @@ This project is a GraphQL API server built with Apollo Server, Prisma, and Node.
    ```
    npm start
    ```
+The server will be running at `http://localhost:4000/graphql`.
